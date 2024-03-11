@@ -1,11 +1,11 @@
-import { Navigate, useLocation } from "react-router-dom";
-function ProtectedRoute({ children }) {
-  const { isAuthenticated } = true;
-  const location = useLocation();
-
-  if (isAuthenticated) {
-    return <Navigate to="/login" state={{ from: location }} replace />;
-  }
-  return children;
-}
-export default ProtectedRoute;
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+import App from "../App";
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  
+]);
