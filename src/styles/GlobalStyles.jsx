@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -14,8 +14,13 @@ const GlobalStyles = createGlobalStyle`
 }
 body {
   margin: 0;
+  font-family: "Poppins";
+}
+.container{
+  max-width: 1340px;
   width: 100%;
-  height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
