@@ -5,8 +5,7 @@ export const HeroBox = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  background-color: #0b4aa8c8;
+  background-color: #0b4aa8d4;
 `;
 export const HeroWrapper = styled.div`
   display: flex;
@@ -19,6 +18,14 @@ export const Img = styled.img`
   width: 100px;
   height: 84px;
   display: block;
+  @media (min-width: 320px) {
+    width: 50px;
+    height: 42px;
+  }
+  @media (min-width: 576px) {
+    width: 100px;
+    height: 84px;
+  }
 `;
 export const LinkHero = styled(Link)`
   display: flex;
@@ -28,6 +35,12 @@ export const LinkHero = styled(Link)`
   color: #fff;
   font-size: 35px;
   text-decoration: none;
+  @media (min-width: 320px) {
+    font-size: 25px;
+  }
+  @media (min-width: 576px) {
+    font-size: 35px;
+  }
 `;
 export const Nav = styled.nav`
   width: 100%;
@@ -40,6 +53,16 @@ export const List = styled.ul`
   align-items: center;
   padding: 0;
   list-style: none;
+  @media (min-width: 320px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  @media (min-width: 1000px) {
+    justify-content: space-between;
+  }
 `;
 export const Item = styled.li`
   display: flex;
@@ -62,7 +85,7 @@ export const NavLinks = styled(Link)`
 export const UnderLine = styled.span`
   display: inline-block;
   width: 140px;
-  height: 2px;
+  height: 3px;
   background-color: transparent;
   transition: background 0.5s linear;
 `;

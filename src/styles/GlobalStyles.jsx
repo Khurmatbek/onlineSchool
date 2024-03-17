@@ -12,15 +12,13 @@ const GlobalStyles = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  box-sizing: border-box;
+}
 body {
+  width: 100%;
   margin: 0;
   font-family: "Poppins";
-}
-.container{
-  max-width: 1340px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

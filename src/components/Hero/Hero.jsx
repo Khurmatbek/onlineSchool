@@ -17,11 +17,12 @@ import {
   UnderLine,
   Item,
 } from "./Hero.style";
+import { Container } from "../../styles/ContainerStyle";
 
 const Hero = () => {
   return (
     <HeroBox>
-      <div className="container">
+      <Container>
         <HeroWrapper>
           <LinkHero to={"/"}>
             <Img src={gerb} width={100} height={84} alt="" />
@@ -75,7 +76,7 @@ const Hero = () => {
             </List>
           </Nav>
         </HeroWrapper>
-      </div>
+      </Container>
     </HeroBox>
   );
 };

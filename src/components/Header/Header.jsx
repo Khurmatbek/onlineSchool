@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import { HeaderBox, HeaderWrapper, Img, Links } from "./Header.style";
 import { TfiEmail } from "react-icons/tfi";
 import { HiOutlinePhone } from "react-icons/hi";
+import { Container } from "../../styles/ContainerStyle";
 const Header = () => {
   return (
     <HeaderBox>
-      <div className="container">
+      <Container>
         <HeaderWrapper className="wrapper">
           <Link to={"/"}>
             <Img
@@ -17,16 +18,16 @@ const Header = () => {
               alt="site logo image"
             />
           </Link>
-          <Links href="mailto:olloyorovxurmatbek1514@gamil.com">
+          <Links href="mailto:8maktab@gmail.com">
             <TfiEmail fontSize={23} />
-            olloyorovxurmatbek1514@gamil.com
+            8maktab@gmail.com
           </Links>
-          <Links href="tel:+998975181514">
+          <Links href="tel:+998712587070">
             <HiOutlinePhone fontSize={23} />
-            +998975181514
+            +998 (71) 258-70-70
           </Links>
         </HeaderWrapper>
-      </div>
+      </Container>
     </HeaderBox>
   );
 };
