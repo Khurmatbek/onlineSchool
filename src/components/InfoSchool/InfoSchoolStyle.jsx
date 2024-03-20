@@ -5,6 +5,8 @@ export const Box = styled.div`
   position: absolute;
   z-index: 10;
   top: calc(50% + 220px);
+
+  
 `;
 
 export const ListInfo = styled.ul`
