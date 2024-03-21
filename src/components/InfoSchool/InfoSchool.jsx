@@ -21,7 +21,7 @@ const InfoSchool = () => {
       <Container>
         <ListInfo>
           <ItemInfo>
-            <InBox bgColor={"#00B3FF"} border={"4px solid red"}>
+            <InBox >
               <TfiViewGrid fontSize={45} />
               <WrapperIn>
                 <InfoTitle>Maktab hayoti</InfoTitle>
@@ -30,26 +30,7 @@ const InfoSchool = () => {
             </InBox>
             <Img src={YutuqlarImage} width={435} height={465} alt="" />
           </ItemInfo>
-          <ItemInfo>
-            <InBox bgColor={"#fff"} border={"4px solid red"}>
-              <FaSwatchbook fontSize={45} />
-              <WrapperIn>
-                <InfoTitle color={"#000"}>Ta'lim</InfoTitle>
-                <InfoLink to={"/about"}>Batafsil</InfoLink>
-              </WrapperIn>
-            </InBox>
-            <Img src={YutuqlarImage} width={435} height={465} alt="" />
-          </ItemInfo>
-          <ItemInfo>
-            <InBox bgColor={"#00AF00"} border={"4px solid transparent"}>
-              <GiMicrophone fontSize={45} />
-              <WrapperIn>
-                <InfoTitle>Tadbirlar</InfoTitle>
-                <InfoLink to={"/about"}>Batafsil</InfoLink>
-              </WrapperIn>
-            </InBox>
-            <Img src={YutuqlarImage} width={435} height={465} alt="" />
-          </ItemInfo>
+
         </ListInfo>
       </Container>
     </Box>

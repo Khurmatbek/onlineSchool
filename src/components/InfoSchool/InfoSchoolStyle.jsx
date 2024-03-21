@@ -5,8 +5,6 @@ export const Box = styled.div`
   position: absolute;
   z-index: 10;
   top: calc(50% + 220px);
-
-  
 `;
 
 export const ListInfo = styled.ul`
@@ -42,8 +40,7 @@ export const InBox = styled.div`
   gap: 30px;
   width: 100%;
   padding: 25px;
-  background-color: ${(props) => props.bgColor || "red"};
-  border-right: ${(props) => props.border || ""};
+  background-color: red;
   @media (min-width: 320px) {
     border-right: 4px solid transparent;
     border-bottom: 4px solid red;
