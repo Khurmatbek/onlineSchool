@@ -11,6 +11,7 @@ export const ListInfo = styled.ul`
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-bottom: 60px;
   gap: 30px;
   list-style: none;
   @media (min-width: 320px) {

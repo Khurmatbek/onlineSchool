@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import InfoSchool from "./components/InfoSchool/InfoSchool";
 import GlobalStyles from "./styles/GlobalStyles";
 import { Outlet } from "react-router";
+import Leaders from "./components/Leaders/Leaders";
 export const PositsionBox = styled.div`
   position: relative;
 `;
@@ -27,6 +28,7 @@ const App = () => {
         <BackGroundImageSchool />
         <InfoSchool />
       </PositsionBox>
+      <Leaders />
       <Outlet />
     </div>
   );

@@ -8,10 +8,9 @@ export const BgBox = styled.div`
   margin: 0 auto;
   background: url("shcool.jpeg");
   opacity: 0.9;
-  background-size: 100% ;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  border-top: 10px solid #fff;
   border-bottom: 10px solid #fff;
   box-shadow: 0px 3px 13px 10px rgba(0, 0, 0, 0.3);
   filter: contrast(1.4);
