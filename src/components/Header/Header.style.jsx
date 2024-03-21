@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const HeaderBox = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   padding: 25px 0;
   background-color: #0b4ba8;
 `;

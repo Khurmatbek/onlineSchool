@@ -1,26 +1,44 @@
 import React from "react";
 import styled from "styled-components";
+import { Container } from "../../styles/ContainerStyle";
 export const BgBox = styled.div`
-  max-width: 3000px;
+  /* max-width: 3000px; */
   width: 100%;
-  height: 700px;
+  height: 600px;
   margin: 0 auto;
   background: url("shcool.jpeg");
-  opacity: 0.6;
-  background-size: 100% 100%;
+  opacity: 0.9;
+  background-size: 100% ;
   background-repeat: no-repeat;
   background-position: center;
-  filter: contrast(1.7);
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  box-shadow: 0px 3px 13px 10px rgba(0, 0, 0, 0.3);
+  filter: contrast(1.4);
+  @media (min-width: 320px) {
+    height: 300px;
+  }
+  @media (min-width: 576px) {
+    height: 360px;
+  }
+  @media (min-width: 756px) {
+    height: 400px;
+  }
+  @media (min-width: 1000px) {
+    height: 600px;
+  }
+
 `;
 
 export const WrapperBox = styled.div`
   width: 100%;
+  padding-bottom: 20px;
   background-color: #094ca8;
 `;
 const BackGroundImageSchool = () => {
   return (
     <WrapperBox>
-      <BgBox />
+        <BgBox />
     </WrapperBox>
   );
 };

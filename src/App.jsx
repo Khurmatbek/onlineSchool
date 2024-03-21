@@ -5,20 +5,30 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import InfoSchool from "./components/InfoSchool/InfoSchool";
 import GlobalStyles from "./styles/GlobalStyles";
+import { Outlet } from "react-router";
 export const PositsionBox = styled.div`
   position: relative;
 `;
+
+export const BoxFixed = styled.div`
+  /* width: 100%; */
+  position: relative;
+`;
+
 const App = () => {
   return (
-    <>
+    <div>
       <GlobalStyles />
-      <Header />
-      <Hero />
+      <BoxFixed>
+        <Header />
+        <Hero />
+      </BoxFixed>
       <PositsionBox>
         <BackGroundImageSchool />
         <InfoSchool />
       </PositsionBox>
-    </>
+      <Outlet />
+    </div>
   );
 };
 export default App;

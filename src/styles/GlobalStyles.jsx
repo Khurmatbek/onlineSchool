@@ -19,6 +19,9 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Poppins";
+  background-color: #094ca8;
+  background-attachment: fixed;
+ background-blend-mode:overlay;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

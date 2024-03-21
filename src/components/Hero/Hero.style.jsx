@@ -2,17 +2,26 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeroBox = styled.div`
+
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #0b4aa8d4;
+  padding-top: 90px;
+  background-color:#436fbc;
+
 `;
 export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 30px 0;
+  @media (min-width: 320px) {
+    padding-top: 100px;
+  }
+  @media (min-width: 576px) {
+    padding-top: 30px;
+  }
 `;
 export const Img = styled.img`
   width: 100px;

@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 export const Box = styled.div`
   width: 100%;
-  position: absolute;
-  z-index: 10;
-  top: calc(50% + 220px);
 `;
 
 export const ListInfo = styled.ul`
@@ -14,6 +11,7 @@ export const ListInfo = styled.ul`
   align-items: center;
   margin: 0;
   padding: 0;
+  gap: 30px;
   list-style: none;
   @media (min-width: 320px) {
     flex-direction: column;
@@ -24,7 +22,8 @@ export const ListInfo = styled.ul`
   }
 `;
 export const ItemInfo = styled.li`
-  max-width: 500px;
+  /* width: 100%; */
+  max-width: 435px;
   width: 100%;
   overflow: hidden;
   @media (min-width: 900px) {
@@ -35,55 +34,67 @@ export const ItemInfo = styled.li`
 export const InBox = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: ${(props) => props.$start || "center"};
   align-items: center;
-  gap: 30px;
+  gap: 25px;
   width: 100%;
-  padding: 25px;
-  background-color: red;
+  padding: 25px 5px;
+  background-color: transparent;
   @media (min-width: 320px) {
     border-right: 4px solid transparent;
-    border-bottom: 4px solid red;
   }
   @media (min-width: 900px) {
-    border-right: 4px solid red;
     border-bottom: 4px solid transparent;
   }
 `;
 
 export const Img = styled.img`
+  height: 400px;
+  box-shadow: 0px 3px 13px 10px rgba(0, 0, 0, 0.3);
+  filter: contrast(1.3);
+  border-radius: ${(props) => props.$first || "3px 200px 0px 0px"};
+  border: 8px solid #ffffff;
   @media (min-width: 320px) {
     min-width: 280px;
     width: 100%;
-    height: 360px;
+    height: 290px;
   }
   @media (min-width: 500px) {
     min-width: 280px;
     width: 100%;
-    height: 430px;
+    height: 320px;
   }
   @media (min-width: 900px) {
     min-width: 280px;
     width: 100%;
-    height: 465px;
+    height: 330px;
+  }
+  @media (min-width: 1100px) {
+    min-width: 280px;
+    width: 100%;
+    height: 400px;
   }
 `;
 
 export const WrapperIn = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: start;
+  margin-bottom: 20px;
 `;
 export const InfoTitle = styled.h3`
-  font-size: 24px;
   color: ${(props) => props.color || "#fff"};
   margin: 0;
   @media (min-width: 320px) {
     font-size: 18px;
   }
+  @media (min-width: 1000px) {
+    font-size: 26px;
+  }
 `;
 export const InfoLink = styled(Link)`
-  color: #000;
+  color: #c3c3c2;
   @media (min-width: 320px) {
     font-size: 15px;
   }

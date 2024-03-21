@@ -6,6 +6,7 @@ import { MdOutlinePlayLesson } from "react-icons/md";
 import { IoGiftOutline } from "react-icons/io5";
 import { FaHandsHoldingChild } from "react-icons/fa6";
 import { LuInfo } from "react-icons/lu";
+import "animate.css";
 import {
   HeroBox,
   HeroWrapper,
@@ -24,8 +25,8 @@ const Hero = () => {
     <HeroBox>
       <Container>
         <HeroWrapper>
-          <LinkHero to={"/"}>
-            <Img src={gerb} width={100} height={84} alt="" />
+          <LinkHero  to={"/"}>
+            <Img src={gerb} width={100} height={84} alt="gerb" />
             8-Maktab
           </LinkHero>
           <Nav>
