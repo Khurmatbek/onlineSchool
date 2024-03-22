@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../../styles/ContainerStyle";
 import online_lesson from "../../../public/onlinedars.jpeg";
 import tadbirlar from "../../../public/tadbirlar.jpeg";
-import school from "../../../public/shcool.jpeg";
+import school from "../../../public/tadbirlar.jpg";
 
 import { GoDeviceCameraVideo } from "react-icons/go";
 import { GiNewspaper } from "react-icons/gi";

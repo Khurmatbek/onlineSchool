@@ -2,16 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import { Container } from "../../styles/ContainerStyle";
 export const BgBox = styled.div`
-  /* max-width: 3000px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  max-width: 3000px;
   width: 100%;
   height: 600px;
   margin: 0 auto;
-  background: url("shcool.jpeg");
-  opacity: 0.9;
-  background-size: 100% 100%;
+  background-image: url("shcool.jpeg");
+  opacity: 0.75;
+  background-size: 100% 100%  ;
   background-repeat: no-repeat;
-  background-position: center;
-  border-bottom: 10px solid #fff;
+  background-position: center center;
   box-shadow: 0px 3px 13px 10px rgba(0, 0, 0, 0.3);
   filter: contrast(1.4);
   @media (min-width: 320px) {
@@ -25,8 +28,8 @@ export const BgBox = styled.div`
   }
   @media (min-width: 1000px) {
     height: 600px;
-  }
 
+  }
 `;
 
 export const WrapperBox = styled.div`
@@ -37,7 +40,7 @@ export const WrapperBox = styled.div`
 const BackGroundImageSchool = () => {
   return (
     <WrapperBox>
-        <BgBox />
+      <BgBox/>
     </WrapperBox>
   );
 };

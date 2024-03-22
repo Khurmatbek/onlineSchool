@@ -53,7 +53,7 @@ export const Img = styled.img`
   height: 400px;
   box-shadow: 0px 3px 13px 10px rgba(0, 0, 0, 0.3);
   filter: contrast(1.3);
-  border-radius: ${(props) => props.$first || "3px 200px 0px 0px"};
+  border-radius: ${(props) => props.$first || "3px 200px 0px 0px"}; 
   border: 8px solid #ffffff;
   @media (min-width: 320px) {
     min-width: 280px;
