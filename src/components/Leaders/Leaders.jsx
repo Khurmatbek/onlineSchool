@@ -8,11 +8,13 @@ import { Box, Div, Image, LeaderTitle, Name } from "./Leaders.style";
 var settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 2000,
   slidesToShow: 4,
   slidesToScroll: 1,
   focusOnSelect: false,
-  focus:false,
+  focus: false,
   centerMode: true,
   responsive: [
     {

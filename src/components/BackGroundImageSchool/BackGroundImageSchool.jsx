@@ -11,7 +11,7 @@ export const BgBox = styled.div`
   height: 600px;
   margin: 0 auto;
   background-image: url("shcool.jpeg");
-  opacity: 0.75;
+  opacity: 0.7;
   background-size: 100% 100%  ;
   background-repeat: no-repeat;
   background-position: center center;

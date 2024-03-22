@@ -27,15 +27,19 @@ export const ItemInfo = styled.li`
   max-width: 435px;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   @media (min-width: 900px) {
-    max-width: 450px;
+    max-width: 430px;
     width: 100%;
   }
 `;
 export const InBox = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: ${(props) => props.$start || "center"};
+  justify-content: center;
   align-items: center;
   gap: 25px;
   width: 100%;
@@ -50,10 +54,12 @@ export const InBox = styled.div`
 `;
 
 export const Img = styled.img`
+  border-radius: 8px;
   height: 400px;
   box-shadow: 0px 3px 13px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.82;
   filter: contrast(1.3);
-  border-radius: ${(props) => props.$first || "3px 200px 0px 0px"}; 
+  /* border-radius: ${(props) => props.$first || "3px 200px 0px 0px"};  */
   border: 8px solid #ffffff;
   @media (min-width: 320px) {
     min-width: 280px;
@@ -74,6 +80,9 @@ export const Img = styled.img`
     min-width: 280px;
     width: 100%;
     height: 400px;
+  }
+  &:hover{
+    opacity: 0.6;
   }
 `;
 
